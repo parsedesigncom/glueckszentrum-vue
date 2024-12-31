@@ -1,0 +1,66 @@
+//Size
+$size-base-1: 1px;
+$size-base-2: 2px;
+$size-base-3: 3px;
+$size-base-5: 5px;
+$size-base-7: 7px;
+$size-base-7: 7px;
+$size-base-9: 9px;
+$size-base-10: 10px;
+
+//grids
+$columns: 12;
+$gutter: $size-base-10;
+
+$break-point-smartphones: 576px;
+$break-point-tablets-portrait: 768px;
+$break-point-tablets-landscape: 992px;
+$break-point-desktop: 1200px;
+$break-point-desktop-large: 1600px;
+$break-point-master: $break-point-tablets-portrait;
+
+//color
+$color-primary: #343434;
+$color-primary-deprecated: $color-primary;
+$color-secondary: $color-primary;
+$color-text: $color-primary;
+$color-accent: #C6A150;
+$color-black: #000000;
+$color-black-alpha: #000000C4;
+$color-white: #FFFFFF;
+$color-red: #C02B55;
+$color-pastel-purple: #BCB0C6;
+$color-transparent: #02010100;
+$color-gold: $color-accent;
+$color-gold-bright: #CBAD6C;
+$color-dark-gray-text-90: #343434;
+$color-text-gray: #DEDEDE;
+$color-bg-light: #FBFDFD;
+$color-gold-alpha: #C4A45496;
+$color-bg-alternative: #FAEBD7;
+$color-bg-alternative-2: #D8C8AE;
+$color-bg-gold: #FFFCF4;
+$color-bg-gold-2: #F8EDD1;
+$color-bg-gray: #F6F6F6;
+
+//border-radius
+$border-radius-base: 10px;
+
+//padding
+$padding-base: $size-base-5;
+$padding-section: 4rem 1rem;
+$padding-btn-x: 20px;
+$padding-btn-y: 40px;
+
+
+
+//font
+$font-family-playfair: "Playfair 9pt", Sans-serif;
+$font-family-montserrat: "montserrat", Sans-serif;
+
+$font-size-text:1.2rem;
+$font-size-headline-small:2rem;
+$font-size-headline-big:2.2rem;
+
+
+
