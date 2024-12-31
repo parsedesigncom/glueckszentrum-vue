@@ -33,8 +33,8 @@
 
 
 p{
-  font-family: vars.$font-family-playfair;
-  @include mixinsText.responsive-text(15px, 1.5);
+  font-family: $font-family-playfair;
+  @include responsive-text(15px, 1.5);
 }
 </style>
 
