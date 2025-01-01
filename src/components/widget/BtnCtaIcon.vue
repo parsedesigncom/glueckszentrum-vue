@@ -41,10 +41,13 @@ export default {
         const content = await loader();
         this.svgIcons[fileName] = content;
       }
+      console.log('Geladene SVGs:', this.svgIcons); // Debugging
     },
     getSvgContent(iconName) {
-      // Nutze das gewünschte Icon oder den Fallback-Icon-Namen
       const name = iconName || this.missingIcon;
+      if (!this.svgIcons[name]) {
+        console.warn(`Icon "${name}" nicht gefunden. Fallback auf "${this.missingIcon}".`);
+      }
       return this.svgIcons[name] || this.svgIcons[this.missingIcon];
     },
     isExternalLink() {
@@ -52,7 +55,7 @@ export default {
       return this.link.startsWith('https://');
     },
   },
-}
+};
 </script>
 
 <template>
