@@ -121,6 +121,8 @@ export default {
   }
 
   &.use-pfeil-02 {
+    align-self: center;
+    margin-left: -150px;
     div {
       &.icon {
         display: inline-flex;
