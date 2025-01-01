@@ -12,6 +12,14 @@ $size-base-10: 10px;
 $columns: 12;
 $gutter: $size-base-10;
 
+/*
+"sm": 576px,
+"md": 768px,
+"lg": 992px,
+"xl": 1200px,
+"xxl": 1600px,
+*/
+
 $break-point-smartphones: 576px;
 $break-point-tablets-portrait: 768px;
 $break-point-tablets-landscape: 992px;
@@ -61,6 +69,12 @@ $font-family-montserrat: "montserrat", Sans-serif;
 $font-size-text:1.2rem;
 $font-size-headline-small:2rem;
 $font-size-headline-big:2.2rem;
+
+$font-xxl: 25px;
+$font-xl: 22px;
+$font-lg: 20px;
+$font-accent: 18px;
+$font-text: 16px;
 
 
 

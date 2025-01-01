@@ -51,6 +51,11 @@ table {
   border-spacing: 0;
 }
 
+strong,
+b{
+  font-weight: unset;
+}
+
 :root {
   --main-font: 'Arial', sans-serif; /* Beispiel für eine Hauptschriftart */
   --main-color: #333; /* Beispiel für eine Hauptfarbe */
