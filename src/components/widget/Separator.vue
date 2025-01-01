@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "HorizontalLine",
+  name: "Separator",
   props: {
     length: {
       type: String,
