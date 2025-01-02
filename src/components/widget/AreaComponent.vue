@@ -5,7 +5,7 @@ export default {
     bgImgSrc: {
       type: String,
       required: false,
-      default: '@assets/images/bg-transparent.png'
+      default: '@img/bg-transparent.png'
     },
     cssClass: {
       type: String,
@@ -35,6 +35,28 @@ export default {
   background-position: left top;
   &.bg-color-white{
     background-color: $color-white;
+  }
+  &.has-bg-left-center-cover-no-repeat{
+    background-color: $color-bg-gray;
+    background-image:var( --background-image ) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+    *{
+      position: relative;
+      z-index: 1;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-bg-gray-alpha;
+      z-index: 0;
+    }
   }
 }
 
