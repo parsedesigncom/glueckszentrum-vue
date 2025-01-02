@@ -86,7 +86,6 @@ export default {
 <style scoped lang="scss">
 .component-holder-IconBox{
   .component-holder-IconBox-holder{
-    position: relative;
     background:$color-white ;
     padding: calc( 2 * $size-base-10);
     border-radius: $border-radius-base;
@@ -102,6 +101,10 @@ export default {
       fill: $color-accent;
       border-radius: 120px;
       align-self: center;
+      *{
+        max-width: 100%;
+        max-height: 100%;
+      }
 
     }
     .title{
@@ -160,6 +163,7 @@ export default {
   }
   &.single-icon-outside{
     .component-holder-IconBox-holder{
+      position: relative;
       background-image: url("./src/assets/images/bg-2-blue.png");
       background-attachment: scroll;
       background-position: center;
