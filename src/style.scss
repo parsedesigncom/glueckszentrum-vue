@@ -1,24 +1,50 @@
+@use "assets/styles/variables";
+@use "assets/styles/fonts";
+@use "assets/styles/mixins-text";
+
 // Vertical Alignment
-.align-items-start {
+.g-align-items-start {
   align-items: flex-start;
 }
-.align-items-center {
+.g-align-items-center {
   align-items: center;
 }
-.align-items-end {
+.g-align-items-end {
   align-items: flex-end;
 }
 
 // Horizontal Alignment
-.justify-content-start {
+.g-justify-content-start {
   justify-content: flex-start;
 }
-.justify-content-center {
+.g-justify-content-center {
   justify-content: center;
 }
-.justify-content-end {
+.g-justify-content-end {
   justify-content: flex-end;
 }
-.justify-content-between {
+.g-justify-content-between {
   justify-content: space-between;
+}
+
+
+// Text Style
+.g-style-text{
+  font-family: $font-family-montserrat;
+  font-size: $font-text;
+  font-weight: 400;
+}
+
+.g-style-text-gold{
+  color: $color-accent;
+}
+
+.g-style-text-center{
+  text-align: center;
+}
+
+.g-style-h2{
+  font-family:$font-family-playfair ;
+  font-weight: 400;
+  @include responsive-headline($font-lg, $font-lg);
 }

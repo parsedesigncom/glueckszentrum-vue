@@ -62,7 +62,7 @@ export default {
       flex-direction: row;
       align-items: center;
       gap: 10px;
-
+      margin-bottom: 10px;
       div {
         &.icon {
           display: inline-flex;
@@ -80,16 +80,21 @@ export default {
 
         &.content {
           flex: 1;
+          font-family: $font-family-montserrat;
+          font-weight: 400;
+          font-size:$font-text;
+          ::v-deep(strong),
+          ::v-deep(b) {
+            font-weight: 600;
+          }
         }
       }
     }
   }
   &.use-in-homepage{
-
     ul.bullet-point-items {
       li.bullet-point-item {
         max-width: 600px;
-        margin-bottom: 15px;
         div {
           &.icon {
             fill: $color-accent;
@@ -98,12 +103,7 @@ export default {
             align-self: start;
           }
           &.content {
-            font-family: $font-family-montserrat;
-            font-weight: 400;
             @include responsive-text($font-accent, $font-accent);
-            ::v-deep(strong) {
-              font-weight: 600;
-            }
           }
         }
       }
