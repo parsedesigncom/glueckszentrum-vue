@@ -111,17 +111,22 @@ export default {
   }
   &.inlineStyle{
     ul.bullet-point-items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0;
       li.bullet-point-item {
-        display: inline;
+        margin: 0;
         div {
-          display: inline-block;
-          margin-right: $size-base-7;
+          display: flex;
+          flex-direction: row;
+          gap: 0;
           &.icon {
             fill: $color-text-gray;
             width: 15px;
             height: 15px;
-            align-self: start;
-            margin-bottom: -2px;
+            align-self: center;
+            margin-left:$size-base-10 ;
           }
           &.content {
             font-size: $font-text;
