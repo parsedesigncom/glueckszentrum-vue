@@ -172,9 +172,16 @@ export default {
   &.single-icon-inside {
     .component-holder-IconBox-holder {
       background: $color-bg-gray;
-
+      min-height: 250px;
       .icon {
         background: $color-bg-gray;
+      }
+      .title {
+        font-size:$font-accent ;
+      }
+
+      .description {
+        font-size:$font-text ;
       }
     }
   }
