@@ -162,6 +162,7 @@ export default {
     }
   }
   &.single-icon-outside{
+    padding-top: calc($gutter + 57px);
     .component-holder-IconBox-holder{
       position: relative;
       background-image: url("./src/assets/images/bg-2-blue.png");
@@ -169,6 +170,7 @@ export default {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      min-height: 200px;
       &:before{
         content: "";
         position: absolute;
@@ -189,7 +191,7 @@ export default {
         z-index: 1;
       }
       .title{
-        margin-top: 50px;
+        margin-top: calc( 2 * $size-base-10);
         z-index: 1;
         position: relative;
       }
