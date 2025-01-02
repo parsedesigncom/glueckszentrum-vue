@@ -81,7 +81,7 @@ export default {
 <style scoped lang="scss">
 .component-holder-CtaBtnIcon {
   font-family: $font-family-montserrat;
-  font-size: 18px;
+  @include responsive-text($font-text-small, $font-text-small);
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -91,17 +91,20 @@ export default {
   }
   div {
     &.icon {
-      display: inline-flex;
+      display: none;
       align-items: center;
       justify-content: center;
       width: 50px;
       height: 50px;
       flex-shrink: 0;
       fill: $color-accent;
-
       svg {
         width: 100%;
         height: 100%;
+      }
+
+      @media (min-width:$break-point-master){
+        display: inline-flex;
       }
     }
     &.link {
@@ -112,7 +115,7 @@ export default {
         color: $color-white;
         padding: $padding-btn-x $padding-btn-y;
         border-radius: $border-radius-base;
-
+        width: 100%;
         &:hover {
           cursor: pointer;
         }
@@ -122,10 +125,11 @@ export default {
 
   &.use-pfeil-02 {
     align-self: center;
-    margin-left: -150px;
+    @media (min-width:$break-point-master){
+      margin-left: -150px;
+    }
     div {
       &.icon {
-        display: inline-flex;
         align-items: center;
         justify-content: center;
         width: 100px;
@@ -134,6 +138,9 @@ export default {
         fill: $color-black;
         transform: rotate(29deg);
         margin-top: -80px;
+        @media (min-width:$break-point-master){
+          display: inline-flex;
+        }
       }
     }
   }
