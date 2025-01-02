@@ -1,6 +1,6 @@
-@use "assets/styles/variables";
-@use "assets/styles/fonts";
-@use "assets/styles/mixins-text";
+@use "assets/styles/variables" as *;
+@use "assets/styles/fonts"  as *;
+@use "assets/styles/mixins-text"  as *;
 
 // Vertical Alignment
 .g-align-items-start {
@@ -39,6 +39,14 @@
   color: $color-accent;
 }
 
+.g-style-text-left{
+  text-align: left;
+}
+
+.g-style-text-right{
+  text-align: right;
+}
+
 .g-style-text-center{
   text-align: center;
 }
@@ -47,4 +55,17 @@
   font-family:$font-family-playfair ;
   font-weight: 400;
   @include responsive-headline($font-lg, $font-lg);
+}
+
+//img-style
+.g-style-img{
+  padding: $size-base-10;
+  border-radius: $size-base-10;
+  border: solid $size-base-3 $color-accent;
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.5);
+  img{
+    border-radius: $size-base-10;
+  }
+
+
 }

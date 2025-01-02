@@ -109,6 +109,27 @@ export default {
       }
     }
   }
+  &.inlineStyle{
+    ul.bullet-point-items {
+      li.bullet-point-item {
+        display: inline;
+        div {
+          display: inline-block;
+          margin-right: $size-base-7;
+          &.icon {
+            fill: $color-text-gray;
+            width: 15px;
+            height: 15px;
+            align-self: start;
+            margin-bottom: -2px;
+          }
+          &.content {
+            font-size: $font-text;
+          }
+        }
+      }
+    }
+  }
 }
 
 
