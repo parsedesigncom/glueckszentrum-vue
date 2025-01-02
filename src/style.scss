@@ -34,6 +34,11 @@
   font-size: $font-text;
   font-weight: 400;
 }
+.g-style-text-accent{
+  font-family: $font-family-montserrat;
+  font-size: $font-accent;
+  font-weight: 400;
+}
 
 .g-style-text-gold{
   color: $color-accent;
