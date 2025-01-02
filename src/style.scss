@@ -40,6 +40,12 @@
   font-weight: 400;
 }
 
+.g-style-text-accent-bold{
+  font-family: $font-family-montserrat;
+  font-size: $font-accent;
+  font-weight: 600;
+}
+
 .g-style-text-gold{
   color: $color-accent;
 }
@@ -66,6 +72,12 @@
   font-family:$font-family-playfair ;
   font-weight: 400;
   @include responsive-headline($font-accent, $font-accent);
+}
+
+.g-style-accent{
+  font-family:$font-family-playfair ;
+  font-weight: 400;
+  @include responsive-headline($font-text, $font-text);
 }
 
 //img-style
