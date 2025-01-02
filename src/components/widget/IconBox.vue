@@ -245,10 +245,13 @@ export default {
       .title {
         margin-top: calc(5 * $size-base-10);
         color: $color-white;
+        line-height: 1.5rem;
       }
 
       .description {
+        font-size: $font-text;
         color: $color-white;
+        line-height: 1.5rem;
       }
     }
   }
