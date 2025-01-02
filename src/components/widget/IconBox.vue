@@ -128,6 +128,8 @@ export default {
       text-align: left;
       justify-content: left;
       overflow: hidden;
+      position: relative;
+      min-height: 370px;
       .icon{
         background:transparent;
         color: $color-white;
@@ -142,6 +144,10 @@ export default {
         width: 200px;
         height: 200px;
         fill: rgba(255,255,255,0.3);
+        *{
+          max-width: 100%;
+          max-height: 100%;
+        }
       }
       .title{
         color:$color-white;
