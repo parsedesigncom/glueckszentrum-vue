@@ -1,5 +1,6 @@
 <script>
 import heroHeaderImage from "@img/hero-header-start.png";
+import AreaBg01 from "@img/unhappy-man-alone-at-home-2021-08-26-15-43-11-utc-scaled-e1693342614377.jpg"
 import slider01 from '@img/slider-01.jpg';
 import slider02 from '@img/slider-02.jpg';
 import slider03 from '@img/slider-03.jpg';
@@ -34,6 +35,7 @@ export default {
   },
   data() {
     return {
+      AreaBg01: AreaBg01,
       imgSrcHeroHeaderSlot: heroHeaderImage,
       bulletDataHeroSlider: [
         {
@@ -367,27 +369,111 @@ export default {
       </div>
     </AreaComponent>
     <AreaComponent cssClass="bg-color-white">
-      <div class="container">
+      <div class="user-style-3">
+        <IconBox
+            title="Das Glückszentrum ist die Coaching-Plattform für jeden der glücklicher, erfolgreicher und gesünder sein möchte!"
+            description="Die Glückszentrum-Online-Hilfe ermöglicht preisgünstig<br><u>professionelles COACHING mit psychologischer BERATUNG,</u><br>bei Problemen, Fragen und zur Zielerreichung!"
+            svgIcon="121-favourite"
+            cssClass="single-icon-outside-2"/>
+        <GapComponent responsiveConfig="0-50" />
+        <ImageSlider
+            :images="imageSliderImages"
+            :screenConfig="imageSliderScreenConfig"
+            :autoplayDuration="imageSliderAutoplayDuration"
+            cssClass="custom-slider-class"
+        />
+        <GapComponent responsiveConfig="0-50" />
+        <h3 class="g-style-accent">Mit Freude morgens aufwachen ...</h3>
+        <GapComponent responsiveConfig="0-10" />
+        <Separator length="150px" thickness="1px"/>
+        <GapComponent responsiveConfig="0-10" />
+        <p class="g-style-text">… dies und vieles mehr ist mit Coaching erreichbar:</p>
+        <GapComponent responsiveConfig="0-30" />
         <div class="row">
-          <div class="col col-12 col-md-2"></div>
-          <div class="col col-12 col-md-8">
-            <IconBox
-                title="Das Glückszentrum ist die Coaching-Plattform für jeden der glücklicher, erfolgreicher und gesünder sein möchte!"
-                description="Die Glückszentrum-Online-Hilfe ermöglicht preisgünstig<br><u>professionelles COACHING mit psychologischer BERATUNG,</u><br>bei Problemen, Fragen und zur Zielerreichung!"
-                svgIcon="121-favourite"
-                cssClass="single-icon-outside-2"/>
-            <GapComponent responsiveConfig="0-50" />
-            <ImageSlider
-                :images="imageSliderImages"
-                :screenConfig="imageSliderScreenConfig"
-                :autoplayDuration="imageSliderAutoplayDuration"
-                cssClass="custom-slider-class"
-            />
-          </div>
-          <div class="col col-12 col-md-2"></div>
+          <div class="col col-12 col-sm-6 col-lg-3"><IconBox title="Mehr Freude und Glücksbewusstsein" svgIcon="139-human-brain" cssClass="single-icon-inside"/></div>
+          <div class="col col-12 col-sm-6 col-lg-3"><IconBox title="Mehr Erfüllung und Zielerreichung" svgIcon="153-target" cssClass="single-icon-inside"/></div>
+          <div class="col col-12 col-sm-6 col-lg-3"><IconBox title="Mehr Selbstliebe und Harmonie" svgIcon="121-favourite" cssClass="single-icon-inside"/></div>
+          <div class="col col-12 col-sm-6 col-lg-3"><IconBox title="Mehr Gesundheit und Vitalität" svgIcon="108-firework" cssClass="single-icon-inside"/></div>
         </div>
       </div>
-
+    </AreaComponent>
+    <AreaComponent>
+      <div class="container">
+        <div class="row">
+          <div class="col col-12 col-lg-6">
+            <h2 class="g-style-h2">Hier bist du richtig, wenn ...</h2>
+            <GapComponent responsiveConfig="0-10" />
+            <Separator length="150px" thickness="1px" alignment="left"/>
+            <GapComponent responsiveConfig="0-30" />
+            <p class="g-style-text">Hinter allen scheinbar unüberwindbaren Problemen liegen verborgene Lösungsmöglichkeiten. Nur leider stehen oft hinderliche Denk- und Verhaltensmuster aus dem Unterbewusstsein im Wege.</p>
+            <GapComponent responsiveConfig="0-15" />
+            <p class="g-style-text">Du musst nicht im Alleingang kämpfen, um deine Hürden zu überwinden! Es ist auch ein Zeichen von Stärke, Hilfe anzunehmen und sich auf den Pfad des persönlichen Wachstums zu begeben.</p>
+            <GapComponent responsiveConfig="0-15" />
+            <p class="g-style-text">Wenn du schon einiges gelesen, gegrübelt und versucht hast, um deine Wünsche zu erfüllen, es bisher jedoch noch nicht geschafft hast, dann bist du bei uns genau richtig.</p>
+            <GapComponent responsiveConfig="0-15" />
+            <p class="g-style-text">Hier kannst du dich professionell und anonym unterstützen lassen (ohne dass du das beim Arbeitgeber oder bei Versicherungen angeben musst).</p>
+            <GapComponent responsiveConfig="0-15" />
+            <p class="g-style-text">Möchtest du genauso lebensverändernd, wie ein Spitzensportler gecoacht werden, nur weit preisgünstiger? Dann wähle jetzt deinen Coach aus!</p>
+          </div>
+          <div class="col col-12 col-lg-6">
+            <div class="g-style-img-centered g-style-img-centered__300">
+              <img src="@img/chat_01-768x1391.png" alt="Glüchszetrum">
+            </div>
+          </div>
+        </div>
+      </div>
+    </AreaComponent>
+    <AreaComponent class="bg-color-white">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12 col-lg-6">
+            <div class="g-style-img-centered g-style-img-centered__300">
+              <img src="@img/chat_02-768x1391.png" alt="Glüchszetrum">
+            </div>
+          </div>
+          <div class="col col-12 col-lg-6">
+            <h2 class="g-style-h2">Was ist Coaching?</h2>
+            <GapComponent responsiveConfig="0-10" />
+            <Separator length="150px" thickness="1px" alignment="left"/>
+            <GapComponent responsiveConfig="0-30" />
+            <p class="g-style-text">Coaching hilft dir dabei, dein volles Potenzial zu entfalten.</p>
+            <GapComponent responsiveConfig="0-15" />
+            <p class="g-style-text">Im Coaching des Glückszentrums unterstützen dich vielseitig ausgebildete Experten effektiv bei der Lösung unterschiedlichster Probleme und bei der Erreichung deiner individuellen Ziele – sei es im beruflichen oder persönlichen Bereich:</p>
+            <GapComponent responsiveConfig="0-15" />
+            <p class="g-style-text">Ganz gleich, ob es um das Bewältigen von Krisen geht, um:</p>
+            <GapComponent responsiveConfig="0-15" />
+            <p class="g-style-text"></p>
+            <GapComponent responsiveConfig="0-15" />
+            <p class="g-style-text"><i><b>Entscheidungshilfen, Beziehungsprobleme, Konfliktbewältigung, Kommunikationsproblemen, Emotionen, Stress, Stimmungsschwankungen, Enttäuschung, Frustration, Veränderungsprozesse, Karriereplanung, finanzielle Erfolge, Verbesserung der beruflichen Fähigkeiten, Sinnfindung oder Ähnlichem.</b></i></p>
+            <GapComponent responsiveConfig="0-15" />
+            <p class="g-style-text"><b>Coaching basiert auf WISSENSCHAFTLICH anerkannten Methoden und hilft sich selbst zu reflektieren, hinderliche Denk- und Verhaltensmuster zu erkennen und durch positive zu ersetzen. Insbesondere können im Unterbewusstsein gespeicherte Blockaden gelöst und zielführende Fähigkeiten entwickelt werden.</b></p>
+            <GapComponent responsiveConfig="0-15" />
+          </div>
+        </div>
+      </div>
+    </AreaComponent>
+    <AreaComponent class="has-bg-left-center-cover-no-repeat" :bgImgSrc="AreaBg01">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12">
+            <div class="user-style-3">
+              <h2 class="g-style-h2 g-style-text-center">Lass nicht zu, dass die Umstände über dich bestimmen!</h2>
+              <GapComponent responsiveConfig="0-30" />
+              <p class="g-style-text g-style-text-center">Nutze diese unkomplizierte Gelegenheit, der professionellen Unterstützung für dein glücklicheres Leben!</p>
+              <GapComponent responsiveConfig="0-30#992-50" />
+              <p class="g-style-text-center g-style-hand">Von Frust zu Lebenslust!</p>
+              <GapComponent responsiveConfig="0-50" />
+              <BtnCtaIcon
+                  link="/coaches"
+                  target="_blank"
+                  clickText="Entdecke jetzt deinen professionellen Coach"
+                  svgIcon="pfeil-02"
+                  cssClass="use-pfeil-02"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </AreaComponent>
   </div>
 </template>
