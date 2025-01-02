@@ -33,6 +33,9 @@
   font-family: $font-family-montserrat;
   font-size: $font-text;
   font-weight: 400;
+  b,strong{
+    font-weight: 500;
+  }
 }
 .g-style-text-accent{
   font-family: $font-family-montserrat;
@@ -80,6 +83,12 @@
   @include responsive-headline($font-text, $font-text);
 }
 
+.g-style-hand{
+  font-family:$font-family-amsterdam-two ;
+  font-weight: 400;
+  @include responsive-headline($font-text-small, $font-text-small);
+}
+
 //img-style
 .g-style-img{
   padding: $size-base-10;
@@ -89,6 +98,34 @@
   img{
     border-radius: $size-base-10;
   }
+}
 
+//image-sizes
 
+$img-sizes: (
+        150: 150px,
+        300: 300px,
+        500: 500px
+);
+
+.g-style-img-centered {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  @each $size, $value in $img-sizes {
+    &__#{$size} {
+      img {
+        max-width: $value;
+      }
+    }
+  }
 }
