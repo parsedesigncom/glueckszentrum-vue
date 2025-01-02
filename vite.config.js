@@ -34,7 +34,7 @@ export default defineConfig({
           // Prüfen, ob die Datei ein Font ist
           const fontExtensions = ['.woff', '.woff2', '.ttf', '.otf', '.eot'];
           const svgExtensions = ['.svg'];
-          const imgExtensions = ['.gif', '.png', '.jpeg'];
+          const imgExtensions = ['.gif', '.png', '.jpeg', '.jpg'];
 
           if (fontExtensions.some(ext => assetInfo.name.endsWith(ext))) {
             return 'assets/fonts/[name][extname]';
