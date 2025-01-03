@@ -3,6 +3,7 @@ import {useAuthStore} from "@/stores/auth";
 import Home from "@/views/Home.vue";
 import Login from "@/views/Login.vue";
 import Cpanel from "@/views/Cpanel.vue";
+import Coaches from "@/views/Coaches.vue";
 
 
 
@@ -11,6 +12,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+  },
+  {
+    path: '/coaches',
+    name: 'Coaches',
+    component: Coaches,
   },
   {
     path: '/login',
