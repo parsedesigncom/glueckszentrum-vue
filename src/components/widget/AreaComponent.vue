@@ -26,7 +26,6 @@ export default {
 <style scoped lang="scss">
 
 .component-holder-AreaComponent{
-  box-sizing: border-box;
   padding: 4.3rem 1rem;
   background-color: $color-bg-gray ;
   background-image: var(--background-image);
@@ -38,6 +37,9 @@ export default {
   }
   &.bg-color-gold{
     background-color: $color-gold;
+  }
+  &.bg-color-gold-light{
+    background-color: $color-bg-gold-2;
   }
   &.has-bg-left-center-cover-no-repeat{
     background-color: $color-bg-gray;
@@ -60,6 +62,10 @@ export default {
       background-color: $color-bg-gray-alpha;
       z-index: 0;
     }
+  }
+  &.use-as-insider-box{
+    padding: 2rem;
+    border-radius:$border-radius-base;
   }
 }
 

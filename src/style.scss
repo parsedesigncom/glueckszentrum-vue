@@ -86,6 +86,12 @@
   @include responsive-headline($font-text, $font-text);
 }
 
+.g-style-accent-small{
+  font-family:$font-family-playfair ;
+  font-weight: 500;
+  @include responsive-headline($font-text-small, $font-text-small);
+}
+
 .g-style-hand{
   font-family:$font-family-amsterdam-two ;
   font-weight: 400;
@@ -144,5 +150,26 @@ $img-sizes: (
   &._btn-is-reverse{
     background:$color-white;
     color: $color-accent;
+  }
+}
+
+//Container Style
+.g-container-center{
+  text-align: center;
+  max-width: $break-point-tablets-landscape;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+//listing
+.g-ul-listing-inline{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li{
+    display: inline-block;
+    margin-right: $size-base-3;
   }
 }

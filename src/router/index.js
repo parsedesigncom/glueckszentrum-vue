@@ -4,6 +4,7 @@ import Home from "@/views/Home.vue";
 import Login from "@/views/Login.vue";
 import Cpanel from "@/views/Cpanel.vue";
 import Coaches from "@/views/Coaches.vue";
+import Coach from "@/views/Coach.vue";
 
 
 
@@ -17,6 +18,12 @@ const routes = [
     path: '/coaches',
     name: 'Coaches',
     component: Coaches,
+  },
+  {
+    path: '/coach/:id',
+    name: 'Coach',
+    component: Coach,
+    props: true,
   },
   {
     path: '/login',

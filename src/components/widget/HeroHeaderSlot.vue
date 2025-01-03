@@ -104,6 +104,48 @@ export default {
       }
     }
   }
+  &.center-mode-ever{
+    .component-holder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      @media(min-width:$break-point-tablets-landscape){
+        flex-direction: column;
+      }
+      ._left {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        @media(min-width:$break-point-tablets-landscape){
+          width: 100%;
+        }
+        img {
+          max-width: 250px;
+          @media(min-width:$break-point-tablets-landscape){
+            max-width: 250px;
+          }
+        }
+
+      }
+      ._right {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        display: flex;
+        box-sizing: border-box;
+        @media(min-width:$break-point-tablets-landscape){
+          width: 100%;
+          text-align: cenetr;
+        }
+        ._content{
+          align-self: center;
+          text-align: center;
+        }
+      }
+    }
+  }
   &.use-in-homepage{
     .component-holder{
       ._left {
@@ -125,7 +167,35 @@ export default {
         }
       }
     }
-
   }
+  &.use-in-coach-page{
+    padding: 4rem 1rem;
+    .component-holder{
+      @media(min-width:$break-point-tablets-landscape){
+        min-height:0;
+      }
+      ._left {
+        img {
+          display: block;
+          max-width: 250px;
+          margin: 0;
+          height: auto;
+          border-radius: $border-radius-base;
+          width: 100%;
+          padding: $size-base-1;
+          border: solid $size-base-3 $color-white;
+          box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+          @media(min-width:$break-point-tablets-landscape){
+            margin: auto;
+
+          }
+        }
+      }
+    }
+  }
+  &.bg-is-gold-light{
+    background: $color-bg-gold-2;
+  }
+
 }
 </style>

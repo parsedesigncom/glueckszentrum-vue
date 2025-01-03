@@ -140,11 +140,14 @@ export default {
       }
     }
   }
-  &.small-btn{
+  &.no-icon{
     font-size: $font-text;
     font-weight: 400;
     div{
-      &.link{
+      &.icon {
+        display: none!important;
+      }
+      &.link {
         a, router-link {
           padding: $size-base-10 $padding-btn-x;
         }
