@@ -196,6 +196,9 @@ export default {
   &.bg-is-gold-light{
     background: $color-bg-gold-2;
   }
+  &.bg-is-gray-alpha{
+    background: $color-bg-gray-alpha;
+  }
 
 }
 </style>

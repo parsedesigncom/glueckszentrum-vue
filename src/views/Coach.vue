@@ -81,6 +81,26 @@ export default {
       <HeroHeaderSlot
           :imgSrc="coachDetails?.vip_eberl_coach_image"
           :imgAlt="coachDetails?.vip_eberl_coach_pseudonym_displayname"
+          cssClass="center-mode-ever"
+      >
+        <GapComponent responsiveConfig="0-30" />
+        <h2 class="g-style-h2 g-style-text-gold">{{coachDetails.vip_eberl_coach_pseudonym_displayname}}</h2>
+        <GapComponent responsiveConfig="0-15" />
+        <p class="g-style-text-accent">{{coachDetails.vip_eberl_coach_profession}}</p>
+        <GapComponent responsiveConfig="0-70" />
+        <div class="g-container-center">
+          <BtnCtaIcon
+              link="/coaches"
+              target="_blank"
+              clickText="Coaching starten"
+              cssClass="use-pfeil-02"
+              svgIcon="pfeil-02"
+          />
+        </div>
+      </HeroHeaderSlot>
+<!--      <HeroHeaderSlot
+          :imgSrc="coachDetails?.vip_eberl_coach_image"
+          :imgAlt="coachDetails?.vip_eberl_coach_pseudonym_displayname"
           cssClass="use-in-coach-page"
       >
         <GapComponent responsiveConfig="0-30#992-0" />
@@ -94,7 +114,7 @@ export default {
             clickText="Coaching starten"
             cssClass=""
         />
-      </HeroHeaderSlot>
+      </HeroHeaderSlot>-->
       <AreaComponent cssClass="bg-color-white">
         <div class="container">
           <div class="row">
@@ -178,7 +198,7 @@ export default {
       <HeroHeaderSlot
           :imgSrc="coachDetails?.vip_eberl_coach_image"
           :imgAlt="coachDetails?.vip_eberl_coach_pseudonym_displayname"
-          cssClass="center-mode-ever bg-is-gold-light"
+          cssClass="center-mode-ever bg-is-gray-alpha"
       >
         <GapComponent responsiveConfig="0-30" />
         <h2 class="g-style-h2 g-style-text-gold">{{coachDetails.vip_eberl_coach_pseudonym_displayname}}</h2>
