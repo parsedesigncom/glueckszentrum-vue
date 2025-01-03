@@ -86,9 +86,6 @@ export default {
   display: flex;
   align-items: center;
   gap: 10px;
-  * {
-    box-sizing: border-box;
-  }
   div {
     &.icon {
       display: none;
@@ -122,7 +119,6 @@ export default {
       }
     }
   }
-
   &.use-pfeil-02 {
     align-self: center;
     @media (min-width:$break-point-master){
@@ -140,6 +136,17 @@ export default {
         margin-top: -80px;
         @media (min-width:$break-point-master){
           display: inline-flex;
+        }
+      }
+    }
+  }
+  &.small-btn{
+    font-size: $font-text;
+    font-weight: 400;
+    div{
+      &.link{
+        a, router-link {
+          padding: $size-base-10 $padding-btn-x;
         }
       }
     }
