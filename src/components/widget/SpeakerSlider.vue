@@ -221,5 +221,19 @@ export default {
     }
 
   }
+  &.no-links{
+    .slider-container {
+      .speaker-cards {
+        .speaker-card {
+          .speaker-holder {
+            .speaker-info {
+             display: none;
+            }
+          }
+        }
+      }
+    }
+
+  }
 }
 </style>
