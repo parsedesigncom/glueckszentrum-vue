@@ -40,11 +40,11 @@ export default {
       bulletDataHeroSlider: [
         {
           icon: 'check-01',
-          content: 'Erschaffe dein Wunschleben durch <strong>hochwertiges Coaching</strong> mit <strong>psychologischer Beratung</strong> zu <strong>günstigen Preisen</strong>.',
+          content: 'Erschaffe dein Wunschleben durch <strong>hochwertiges Coaching</strong> mit <strong>psychologischer Beratung</strong>.',
         },
         {
           icon: 'check-01',
-          content: 'Profitiere <strong>privat, beruflich, finanziell</strong> und <strong>gesundheitlich.</strong>',
+          content: 'Profitiere <strong>persönlich, beruflich, finanziell</strong> und <strong>gesundheitlich.</strong>',
         }
       ],
       bulletData1: [
@@ -155,7 +155,7 @@ export default {
       <div class="user-style-2">
         <p>Bei uns  ist COACHING für ALLE möglich.</p>
         <GapComponent responsiveConfig="0-5#576-15" />
-        <p>PROFESSIONELL & GÜNSTIG & SCHNELL & ANONYM</p>
+        <p>PROFESSIONELL & PREISWERT & SCHNELL & ANONYM</p>
       </div>
     </AreaComponent>
     <AreaComponent>
@@ -193,8 +193,8 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col col-12">
-            <p class="g-style-text g-style-text-gold g-style-text-center">
-              <u><b>96 %</b> der Kunden</u> sind mit ihrem Coaching zufrieden und würden es weiterempfehlen.
+            <p class="g-style-text-accent-bold g-style-text-gold g-style-text-center">
+              <b><u>96 % der Kunden</u> sind mit ihrem Coaching zufrieden und würden es weiterempfehlen.</b>
             </p>
           </div>
         </div>
@@ -203,7 +203,8 @@ export default {
     <AreaComponent>
       <div class="container">
         <div class="row">
-          <div class="col col-12 col-lg-6">
+          <div class="col col-12 col-lg-1"></div>
+          <div class="col col-12 col-lg-5">
             <div class="  user-style-4">
               <h2 class="g-style-h2">Entdecke deinen Coach!</h2>
               <GapComponent responsiveConfig="0-10" />
@@ -212,27 +213,29 @@ export default {
               <BulletPoint :items="bulletData1"/>
             </div>
           </div>
-          <div class="col col-12 col-lg-2"></div>
+          <div class="col col-12 col-lg-1"></div>
           <div class="col col-12 col-lg-4 ">
             <GapComponent responsiveConfig="0-30#992-0" />
             <div class="g-style-img">
               <img src="@img/sad-shocked-upset-scared-european-millennial-woman.jpg" alt="" >
             </div>
           </div>
+          <div class="col col-12 col-lg-1"></div>
         </div>
       </div>
     </AreaComponent>
     <AreaComponent class="bg-color-white">
       <div class="container">
         <div class="row">
-          <div class="col col-12 col-lg-6">
+          <div class="col col-12 col-lg-1"></div>
+          <div class="col col-12 col-lg-4">
 
             <div class="g-style-img">
               <img src="@img/Beratungsthemen.png" alt="" >
             </div>
             <GapComponent responsiveConfig="0-30#992-0" />
           </div>
-            <div class="col col-12 col-lg-1"></div>
+          <div class="col col-12 col-lg-1"></div>
           <div class="col col-12 col-lg-5">
             <div class=" user-style-4">
               <h2 class="g-style-h2">Was fordert dich heraus?</h2>
@@ -242,14 +245,20 @@ export default {
               <BulletPoint :items="bulletData2" css-class="inlineStyle"/>
             </div>
           </div>
-          <div class="col col-12">
-            <GapComponent responsiveConfig="0-50" />
-            <p class="g-style-text-gold g-style-text-accent">Wir unterstützen dich dabei, belastende Themen zu meistern, blockierende Hindernisse zu überwinden und die Voraussetzungen zu schaffen, die dich deinen Wünschen näherbringen.</p>
-            <GapComponent responsiveConfig="0-30" />
-            <p class=" g-style-text-accent">Es ist, als würden wir gemeinsam einen tief sitzenden Dorn aus deinen Füßen ziehen, der dir schon lange Schmerzen bereitet und dich daran hindert, voranzukommen.</p>
-            <GapComponent responsiveConfig="0-30" />
-            <p class="g-style-text-gold g-style-text-accent">Unsere Aufgabe ist es, dich mit <u>professionellem Coaching</u> und <u>psychologischer Beratung</u> zu unterstützen, ein Leben zu erschaffen, wie du es dir wünschst – und das zu <u>unschlagbar günstigen Konditionen</u>. Probiere es aus und entdecke, wie wir dir helfen können, das Leben zu gestalten, das du dir wünschst!</p>
+          <div class="col col-12 col-lg-1"></div>
+          <div class="row">
+            <div class="col col-12 col-lg-2"></div>
+            <div class="col col-12 col-lg-8">
+              <GapComponent responsiveConfig="0-50" />
+              <p class="g-style-text-gold g-style-text-accent">Wir unterstützen dich dabei, belastende Themen zu meistern, blockierende Hindernisse zu überwinden und die Voraussetzungen zu schaffen, die dich deinen Wünschen näherbringen.</p>
+              <GapComponent responsiveConfig="0-30" />
+              <p class=" g-style-text-accent">Es ist, als würden wir gemeinsam einen tief sitzenden Dorn aus deinen Füßen ziehen, der dir schon lange Schmerzen bereitet und dich daran hindert, voranzukommen.</p>
+              <GapComponent responsiveConfig="0-30" />
+              <p class="g-style-text-gold g-style-text-accent">Unsere Aufgabe ist es, dich mit <u>professionellem Coaching</u> und <u>psychologischer Beratung</u> zu unterstützen, ein Leben zu erschaffen, wie du es dir wünschst – und das zu <u>unschlagbar günstigen Konditionen</u>. Probiere es aus und entdecke, wie wir dir helfen können, das Leben zu gestalten, das du dir wünschst!</p>
+            </div>
+            <div class="col col-12 col-lg-2"></div>
           </div>
+
 
         </div>
       </div>
@@ -328,7 +337,7 @@ export default {
           </div>
           <div class="col col-1"></div>
           <div class="col col-12">
-            <GapComponent responsiveConfig="0-25#992-50" />
+            <GapComponent responsiveConfig="0-50#992-100" />
             <h3 class="g-style-h3 g-style-text-center">Das Glückszentrum ist für DICH da!</h3>
             <GapComponent responsiveConfig="0-25" />
             <div class="row">

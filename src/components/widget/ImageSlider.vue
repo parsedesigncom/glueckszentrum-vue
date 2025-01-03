@@ -93,8 +93,8 @@ $animationSpeed: 40s;
 
   .slide {
     flex: 0 0 auto;
-    height: 100px;
-    width: 250px;
+    height: 70px;
+    width: 150px;
   }
 }
 </style>

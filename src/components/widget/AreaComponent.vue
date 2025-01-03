@@ -27,7 +27,7 @@ export default {
 
 .component-holder-AreaComponent{
   box-sizing: border-box;
-  padding: 4rem 1rem;
+  padding: 4.3rem 1rem;
   background-color: $color-bg-gray ;
   background-image: var(--background-image);
   background-size: auto;

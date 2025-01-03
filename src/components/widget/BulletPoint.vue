@@ -103,7 +103,7 @@ export default {
             align-self: start;
           }
           &.content {
-            @include responsive-text($font-accent, $font-accent);
+            @include responsive-text($font-text, $font-text);
           }
         }
       }
