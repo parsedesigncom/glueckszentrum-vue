@@ -36,6 +36,9 @@ export default {
   &.bg-color-white{
     background-color: $color-white;
   }
+  &.bg-color-gold{
+    background-color: $color-gold;
+  }
   &.has-bg-left-center-cover-no-repeat{
     background-color: $color-bg-gray;
     background-image:var( --background-image ) ;

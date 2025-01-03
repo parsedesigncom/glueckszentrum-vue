@@ -27,6 +27,8 @@ $break-point-desktop: 1200px;
 $break-point-desktop-large: 1600px;
 $break-point-master: $break-point-tablets-portrait;
 
+$centered-width-large:$break-point-desktop-large;
+
 //color
 $color-primary: #343434;
 $color-primary-deprecated: $color-primary;
